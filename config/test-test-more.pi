@@ -1,0 +1,17 @@
+{
+    main_module_name => 'Test::Test::More',
+    file_names => [qw(
+        lib/Test/Test/More.pm
+        lib/Test/Test/More.pod
+        t/test/test-more.t
+        config/test-test-more.pi
+    )],
+    req_modules => {
+        'Test::More' => 0,
+    },
+    t_req_modules => {
+        'Path::Class' => 0,
+        'Test::Differences' => 0,
+    },
+};
+

@@ -1,0 +1,73 @@
+=head1 NAME
+
+Test::Test::More - Test Test::More-based tests
+
+=head1 SYNOPSIS
+
+  use Test::Test::More;
+  
+  test_ok_ok {
+    ok 1;
+  }; # ok
+  
+  test_ok_ok {
+    ok 0;
+  }; # not ok
+  
+  test_ng_ok {
+    ok 1;
+  }; # not ok
+  
+  test_ng_ok {
+    ok 0;
+  }; # ok
+
+=head1 DESCRIPTION
+
+The C<Test::Test::More> module provides subroutines for testing of
+L<Test::More>-based test modules such as C<test_ok_ok> and
+C<test_ng_ok>.
+
+=head1 USAGE
+
+=over 4
+
+=item test_ok_ok { CODE } [NAME];
+
+It passes iff the execution of I<CODE> results in a test passed using
+one of L<Test::More> subroutines.
+
+=item test_ng_ok { CODE } [NAME];
+
+It passes iff the execution of I<CODE> results in a test failed using
+one of L<Test::More> subroutines.
+
+=item failure_output_like { CODE } REGEXP [NAME];
+
+It passes iff the execution of I<CODE> gets failure output looks
+C<like> I<REGEXP>.
+
+=back
+
+=head1 HISTORY
+
+=over 4
+
+=item 1.0 (2010-08-05)
+
+First version.
+
+=back
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>
+
+=head1 LICENSE
+
+Copyright 2010 Hatena <http://www.hatena.ne.jp/>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
