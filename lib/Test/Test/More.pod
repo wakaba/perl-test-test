@@ -49,10 +49,12 @@ C<like> I<REGEXP>.
 
 =back
 
-=head1 DISTRIBUTION
+=head1 DEVELOPMENT
 
 Latest version of the module is available from the Git repository:
 <https://github.com/wakaba/perl-test-test>.
+
+Travis CI: <http://travis-ci.org/wakaba/perl-test-test>.
 
 =head1 HISTORY
 
