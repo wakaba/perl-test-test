@@ -4,7 +4,7 @@
         lib/Test/Test/More.pm
         lib/Test/Test/More.pod
         t/test/test-more.t
-        config/test-test-more.pi
+        config/dist/test-test-more.pi
     )],
     req_modules => {
         'Test::More' => 0,
