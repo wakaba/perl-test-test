@@ -1,6 +1,6 @@
 =head1 NAME
 
-Test::Test::More - Test Test::More-based tests
+Test::Test::More - Test Test::More-based test subroutines
 
 =head1 SYNOPSIS
 
@@ -48,6 +48,11 @@ It passes iff the execution of I<CODE> gets failure output looks
 C<like> I<REGEXP>.
 
 =back
+
+=head1 DISTRIBUTION
+
+Latest version of the module is available from the Git repository:
+<https://github.com/wakaba/perl-test-test>.
 
 =head1 HISTORY
 
