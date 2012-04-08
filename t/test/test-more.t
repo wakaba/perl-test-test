@@ -57,11 +57,11 @@ sub _failure_output_like : Test(2) {
     failure_output_like {
         eq_or_diff 'ab', 'ac';
     } qr<\Q
-# +---+-----+----------+
-# | Ln|Got  |Expected  |
-# +---+-----+----------+
-# *  1|ab   |ac        *
-# +---+-----+----------+
+# +---+\E-+\Q+----------+
+# | Ln|Got\E +\Q|Expected  |
+# +---+\E-+\Q+----------+
+# *  1|\E'?ab'? +\Q|\E'?ac'? +\Q*
+# +---+\E-+\Q+----------+
 \E>;
 }
 
