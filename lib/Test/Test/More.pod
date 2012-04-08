@@ -54,7 +54,8 @@ C<like> I<REGEXP>.
 Latest version of the module is available from the Git repository:
 <https://github.com/wakaba/perl-test-test>.
 
-Travis CI: <http://travis-ci.org/wakaba/perl-test-test>.
+Thanks to Travis CI, test results can be reviewed at:
+<http://travis-ci.org/wakaba/perl-test-test>.
 
 =head1 HISTORY
 
