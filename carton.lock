@@ -417,6 +417,49 @@
          "target" : "Data::Dumper",
          "version" : "2.131"
       },
+      "Exporter::Lite" : {
+         "dist" : "Exporter-Lite-0.02",
+         "mymeta" : {
+            "abstract" : "unknown",
+            "author" : [
+               "unknown"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "ExtUtils::MakeMaker version 6.31, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Exporter-Lite",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : 0
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Test::More" : "0.34"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "version" : "0.02"
+         },
+         "name" : "Exporter::Lite",
+         "pathname" : "M/MS/MSCHWERN/Exporter-Lite-0.02.tar.gz",
+         "provides" : {
+            "Exporter::Lite" : {
+               "file" : "Exporter/Lite.pm",
+               "version" : "0.02"
+            }
+         },
+         "target" : "Exporter::Lite",
+         "version" : "0.02"
+      },
       "ExtUtils::CBuilder" : {
          "dist" : "ExtUtils-CBuilder-0.280205",
          "mymeta" : {
@@ -811,6 +854,72 @@
          },
          "target" : "Locale::Maketext::Simple",
          "version" : "0.21"
+      },
+      "MRO::Compat" : {
+         "dist" : "MRO-Compat-0.11",
+         "mymeta" : {
+            "abstract" : "mro::* interface compatibility for Perls < 5.9.5",
+            "author" : [
+               "Brandon L. Black, <blblack@gmail.com>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Module::Install version 0.91, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "MRO-Compat",
+            "no_index" : {
+               "directory" : [
+                  "inc",
+                  "t"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : 0
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.42"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.42",
+                     "Test::More" : "0.47"
+                  }
+               }
+            },
+            "provides" : {
+               "MRO::Compat" : {
+                  "file" : "lib/MRO/Compat.pm",
+                  "version" : "0.11"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "license" : [
+                  "http://dev.perl.org/licenses/"
+               ]
+            },
+            "version" : "0.11"
+         },
+         "name" : "MRO::Compat",
+         "pathname" : "F/FL/FLORA/MRO-Compat-0.11.tar.gz",
+         "provides" : {
+            "MRO::Compat" : {
+               "file" : "MRO/Compat.pm",
+               "version" : "0.11"
+            }
+         },
+         "target" : "MRO::Compat",
+         "version" : "0.11"
       },
       "Module::Build" : {
          "dist" : "Module-Build-0.40",
@@ -1634,6 +1743,173 @@
          "target" : "Perl::OSType",
          "version" : "1.002"
       },
+      "Sub::Uplevel" : {
+         "dist" : "Sub-Uplevel-0.24",
+         "mymeta" : {
+            "abstract" : "apparently run a function in a higher stack frame",
+            "author" : [
+               "Michael Schwern <mschwern@cpan.org>",
+               "David Golden <dagolden@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Sub-Uplevel",
+            "no_index" : {
+               "directory" : [
+                  "t",
+                  "xt",
+                  "examples",
+                  "corpus"
+               ],
+               "package" : [
+                  "DB"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Exporter" : 0,
+                     "File::Find" : 0,
+                     "File::Temp" : 0,
+                     "Test::More" : 0
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Carp" : 0,
+                     "constant" : 0,
+                     "strict" : 0,
+                     "warnings" : 0
+                  }
+               }
+            },
+            "provides" : {
+               "Sub::Uplevel" : {
+                  "file" : "lib/Sub/Uplevel.pm",
+                  "version" : "0.24"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Sub-Uplevel"
+               },
+               "homepage" : "https://github.com/dagolden/sub-uplevel",
+               "repository" : {
+                  "url" : "https://github.com/dagolden/sub-uplevel.git"
+               }
+            },
+            "version" : "0.24"
+         },
+         "name" : "Sub::Uplevel",
+         "pathname" : "D/DA/DAGOLDEN/Sub-Uplevel-0.24.tar.gz",
+         "provides" : {
+            "Sub::Uplevel" : {
+               "file" : "Sub/Uplevel.pm",
+               "version" : "0.24"
+            }
+         },
+         "target" : "Sub::Uplevel",
+         "version" : "0.24"
+      },
+      "Test::Class" : {
+         "dist" : "Test-Class-0.36",
+         "mymeta" : {
+            "abstract" : "Easily create test classes in an xUnit/JUnit style",
+            "author" : [
+               "Adrian Howard <adrianh@quietstars.com>, Curtis \"Ovid\" Poe, <ovid at cpan.org>, Mark Morgan <makk384@gmail.com>."
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Module::Build version 0.4, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Test-Class",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "IO::File" : "1.09",
+                     "Test::Exception" : "0.25"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "Module::Build" : "0.36"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Attribute::Handlers" : "0.77",
+                     "MRO::Compat" : "0.11",
+                     "Storable" : "2.04",
+                     "Test::Builder" : "0.78",
+                     "Test::Builder::Tester" : "1.02",
+                     "Test::More" : "0.78",
+                     "Test::Simple" : "0.78",
+                     "perl" : "5.006001"
+                  }
+               }
+            },
+            "provides" : {
+               "Test::Class" : {
+                  "file" : "lib/Test/Class.pm",
+                  "version" : "0.36"
+               },
+               "Test::Class::Load" : {
+                  "file" : "lib/Test/Class/Load.pm",
+                  "version" : "0.35"
+               },
+               "Test::Class::MethodInfo" : {
+                  "file" : "lib/Test/Class/MethodInfo.pm",
+                  "version" : "0.34"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "license" : [
+                  "http://dev.perl.org/licenses/"
+               ],
+               "repository" : {
+                  "url" : "http://github.com/adrianh/test-class/"
+               }
+            },
+            "version" : "0.36"
+         },
+         "name" : "Test::Class",
+         "pathname" : "A/AD/ADIE/Test-Class-0.36.tar.gz",
+         "provides" : {
+            "Test::Class" : {
+               "file" : "Test/Class.pm",
+               "version" : "0.36"
+            },
+            "Test::Class::Load" : {
+               "file" : "Test/Class/Load.pm",
+               "version" : "0.35"
+            },
+            "Test::Class::MethodInfo" : {
+               "file" : "Test/Class/MethodInfo.pm",
+               "version" : "0.34"
+            }
+         },
+         "target" : "Test::Class",
+         "version" : "0.36"
+      },
       "Test::Differences" : {
          "dist" : "Test-Differences-0.61",
          "mymeta" : {
@@ -1692,6 +1968,65 @@
          },
          "target" : "Test::Differences",
          "version" : "0.61"
+      },
+      "Test::Exception" : {
+         "dist" : "Test-Exception-0.31",
+         "mymeta" : {
+            "abstract" : "Test exception based code",
+            "author" : [
+               "Adrian Howard <adrianh@quietstars.com>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Module::Build version 0.4, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Test-Exception",
+            "prereqs" : {
+               "configure" : {
+                  "requires" : {
+                     "Module::Build" : "0.36"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Sub::Uplevel" : "0.18",
+                     "Test::Builder" : "0.7",
+                     "Test::Builder::Tester" : "1.07",
+                     "Test::Harness" : "2.03",
+                     "Test::More" : "0.7",
+                     "Test::Simple" : "0.7"
+                  }
+               }
+            },
+            "provides" : {
+               "Test::Exception" : {
+                  "file" : "lib/Test/Exception.pm",
+                  "version" : "0.31"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "license" : [
+                  "http://dev.perl.org/licenses/"
+               ]
+            },
+            "version" : "0.31"
+         },
+         "name" : "Test::Exception",
+         "pathname" : "A/AD/ADIE/Test-Exception-0.31.tar.gz",
+         "provides" : {
+            "Test::Exception" : {
+               "file" : "Test/Exception.pm",
+               "version" : "0.31"
+            }
+         },
+         "target" : "Test::Exception",
+         "version" : "0.31"
       },
       "Text::Diff" : {
          "dist" : "Text-Diff-1.41",
